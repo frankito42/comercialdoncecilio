@@ -41,7 +41,7 @@ require "../conn/conn.php";
     color: white;
     border-radius: 128px;
     padding: 1%;" class="login100-form-title">
-						<H2>Tu Negocio!!</H2>
+						<H2 style="color:#005470;font-weight: bold;font-size: 115%;"><?php echo $local['nombre']?></H2>
 					</span>
 
 					

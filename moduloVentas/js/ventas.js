@@ -9,7 +9,7 @@ elInput.addEventListener('keypress', async (e) => {
 });
 const loader = document.querySelector('.loader');
 
-async function expandirDiv() {
+/* async function expandirDiv() {
     interesTarjeta("Pago QR",1)
     document.getElementById("totalQR").innerHTML="$"+document.getElementById("segundoTotal").innerHTML
     let circulo = document.getElementById("circulo");
@@ -27,7 +27,7 @@ async function cerrarDiv() {
         circulo.style.display = "none";
     }, 800);
    
-  }
+  } */
 async function cerrarDivPago() {
     let circulo = document.getElementById("circuloPago");
     circulo.classList.remove("activo");
@@ -36,7 +36,7 @@ async function cerrarDivPago() {
     }, 800);
    
   }
-async function expandirDivPago() {
+/* async function expandirDivPago() {
     let circulo = document.getElementById("circuloPago");
       circulo.style.display = "block";
       setTimeout(function() {
@@ -44,8 +44,8 @@ async function expandirDivPago() {
       }, 10);
    
   }
-
-  async function ponerQR() {
+ */
+ /*  async function ponerQR() {
       let total=parseFloat((document.getElementById("segundoTotal").innerHTML).replace(/,/g, ""))
         const response = await fetch("php/mp.php?total="+total);
         const responseData = await response.text();
@@ -71,7 +71,7 @@ async function expandirDivPago() {
             alert("error")
         }
 
-}
+} */
 
 
 function showLoader() {
@@ -278,7 +278,7 @@ async function guardarVenta(tipoPago) {
                     miCaja.push(deco)
                     localStorage.setItem("miCajaUser",JSON.stringify(miCaja))
                     cargarCaja()
-                    
+                    imprimirElemento()
                     /* $("#exito").modal("show") */
                     document.getElementById('codigoDeBarra').focus()
                   }
@@ -454,8 +454,8 @@ document.getElementById("metodoDePago").addEventListener("keyup", async function
         
     }else if(event.key === "4"){
         
-        await expandirDiv()
-        await ponerQR()
+        /* await expandirDiv()
+        await ponerQR() */
     }
 });
 async function traerClientes() {
@@ -693,8 +693,8 @@ function imprimirElemento(){
         
     }else if(a === "4"){
         
-        await expandirDiv()
-        await ponerQR()
+       /*  await expandirDiv()
+        await ponerQR() */
     }
 };
 

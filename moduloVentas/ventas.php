@@ -381,7 +381,7 @@ require "../conn/conn.php";
                   <h4 class="waves-effect waves-ligh blue-gradient" style="background: #33cce5;color: white;border-radius: 5px;padding: 10%;box-shadow: 0px 0px 20px 0px #00000078;">MP/Tarjeta etc.</h4>
                   <div class="waves-effect waves-ligh blue-gradient" style="background: #33cce5;box-shadow: 0px 0px 3px 0px #00000078;border-radius: 5px;color: white;">Nro 3</div>
                 </div>
-                <div onclick="numeroClick('4')" style="display:relative;" class="col-6">
+                <div onclick="numeroClick('4')" style="display:none;" class="col-6">
                   <h4 class="waves-effect waves-ligh blue-gradient" style="background: #33cce5;color: white;border-radius: 5px;padding: 10%;box-shadow: 0px 0px 20px 0px #00000078;"><i class="fa-solid fa-qrcode"></i></h4>
                   <div class="waves-effect waves-ligh blue-gradient" style="background: #33cce5;box-shadow: 0px 0px 3px 0px #00000078;border-radius: 5px;color: white;">Nro 4</div>
                 </div>
